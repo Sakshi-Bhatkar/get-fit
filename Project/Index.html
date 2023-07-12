@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET FIT</title>
+</head>
+<link rel="stylesheet" href="./css/Style.css">
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url(Image/pexels-scott-webb-28080.jpg );
+        background-size: cover;
+        color: aliceblue;
+        font-family: 'Baloo Bhai', cursive;
+    }
+    /* Left Side */
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .left img{
+        width: 60px;
+        filter: invert(100%);
+        text-align: center;
+    }
+    .left div{
+        
+        line-height: 17px;
+        
+    }
+
+    /* navbar */
+    .mid{
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        list-style: none;
+        /* border: 2px solid rgb(94, 255, 0);  */
+    }
+    /* Right side */
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        /* border: 2px solid rgb(146, 4, 255); */
+    }
+    .btn{
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 5px;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid rgb(250, 250, 244);
+        border-radius: 10px;
+        font-size: 15px;
+        background-color:black ;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color: yellow;
+    }
+    /* navbar */
+    .navbar{
+        list-style: none;
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+        color: rgb(251, 232, 90);
+        text-decoration: underline;
+    }
+    .container{
+        border: 4px solid white;
+        margin: 200px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+    .form-group input{
+       font-family: 'Baloo Bhai', cursive;
+       text-align: center;
+       display: block;
+       width: 500px;
+       padding: 1px;
+       border: 2px solid rgb(0, 0, 0);
+       margin: 3px auto;
+       font-size: 17px;
+       border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+      display: block;
+      margin: auto;
+      width: 23%;
+    }
+    
+
+</style>
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left" >
+           <img src="./Image/logo.png" alt="">
+           <div>GET FIT</div>
+        </div>
+          <!-- for navigation -->
+        <div class="mid" >
+          <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+        </div>
+         <!-- for btn -->
+        <div class="right" > 
+          <button class="btn">Call Us</button>
+          <button class="btn">Email Us</button>
+          <button class="btn">Chat with Us</button>
+        </div>
+    </header>
+    <div class="container">
+    <h1>Hurry Up! Get yourself enrolled</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Number">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
